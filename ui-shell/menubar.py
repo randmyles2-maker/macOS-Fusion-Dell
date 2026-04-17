@@ -14,7 +14,7 @@ def update_top_bar():
 root = tk.Tk()
 root.overrideredirect(True) # Removes Windows borders
 root.geometry(f"{root.winfo_screenwidth()}x28+0+0") # Fixed at top
-root.attributes("-topmost", True)
+root.attributes("-alpha", 0.9)
 root.configure(bg='#000000')
 
 label = tk.Label(root, text="   Finder", fg="white", bg="#000000", font=("Arial", 9, "bold"))
